@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LOGIN</title>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+
+  <body>
+    <img src="./img/NEW.jpg" alt="" />
+    <div class="position">
+      <div class="login-form">
+        <h1>TODO LIST</h1>
+        <form>
+          <input type="text" class="input-box" placeholder="Username" />
+          <input type="Password" class="input-box" placeholder="Password" />
+          <p>
+            <span><input type="checkbox" /></span> Remember me
+          </p>
+          <a 
+            ><button type="button" class="login-btn">LOGIN</button></a
+          >
+          <hr>
+          <p class="or">OR</p>
+          <button type="button" class="google-btn-">LOGIN WITH GOOGLE</button>
+          <p>Don't have an account ? <a href="signup.html">SIGN UP </a></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+        $(".login-btn").click(function () {
+         let valusername =  $("input:text").val();
+         let valpass =  $("input:password").val();
+          if (valusername == ""){
+              window.alert("Username cannot be empty");
+          } else if(valpass === ""){
+            window.alert("Password cannot be empty");
+          } else{        
+              window.location="todolist.html";
+              window.alert("login Succussfull!!");
+          }
+        });
+    </script>
+  </body>
+</html>

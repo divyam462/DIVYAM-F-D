@@ -1,0 +1,102 @@
+
+:root {
+  --mainGreen: 	#3db83d;
+  --mainBlack: #333333;
+  --mainRed: #d62828;
+  --mainBlue: #11b5e4;
+}
+body {
+  font-family: 'Libre Baskerville', serif;
+  background-color: lightgrey ;
+  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png"); 
+  /* overflow-x: hidden;  */
+}
+
+nav{
+  font-family: 'Libre Baskerville', serif;
+}
+
+.heading{
+  font-size: 2.5rem;
+  font-family: 'Sacramento', cursive;
+  text-shadow: 1px 3px 4px grey;
+}
+main{
+  min-height: 100vh;
+}
+.btn-green {
+  border-color: var(--mainBlack);
+  color: whitesmoke;
+  background-color: #3db83d;
+}
+.btn-green:hover {
+  color: whitesmoke;
+}
+.form-control {
+  border-color: var(--mainBlack) !important;
+  border-right: 0;
+}
+
+.feedback {
+  display: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.item-name{
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.item-icon {
+  font-weight: 900;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.complete-item {
+  color: var(--mainBlack);
+}
+.complete-item:hover {
+  color: var(--mainGreen);
+}
+.edit-item {
+  color: var(--mainBlack);
+}
+.edit-item:hover {
+  color: var(--mainBlue);
+}
+.delete-item {
+  color: var(--mainBlack);
+}
+.delete-item:hover {
+  color: var(--mainRed);
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.visibility {
+  opacity: 0.5;
+}
+.showItem {
+  display: block;
+}
+
+.dropdown-item{
+  padding:2px 7px;
+  font-size: .9rem;
+}
+.dropdown-item:hover{
+  background-color: rgb(58, 58, 58);
+  color: #fff;
+}
+
+.calender{
+  background-color:#fff ;
+  width: 170px;
+  border-color: var(--mainBlack);
+  border-width: 1px;
+  border-left: 0;
+}

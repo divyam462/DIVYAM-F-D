@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>LOGIN</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body>
+    <img src="./img/NEW.jpg" alt="">
+    <div class="position">
+        <div class="sign-up-form">
+            <h1>TODO LIST</h1>
+            <form>
+                <input type="text" class="input-box" placeholder="Username">
+                <input type="email" class="input-box" placeholder="Your Email">
+                <input type="Password" class="input-box" placeholder="Password">
+                <p><span><input type="checkbox"> I accept <a href="">Terms of Use</a> & <a href="">Privacy Policy</a></span> </p>
+                <a><button type="button" class="signup-btn"> CREATE ACCOUNT </button></a>
+                <hr>
+                <p class="or">OR</p>
+                <button type="button" class="google-btn-"> SIGN UP WITH GOOGLE</button>
+                <p>Already have an account ? <a href="login.html">LOGIN </a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(".signup-btn").click(function (){
+            let valtext =  $("input:text").val();
+            // let valemail =  $("input:email").val();
+            let valpass =  $("input:password").val();
+            if (valtext === ""){
+                window.alert("Username cannot be empty");
+            // }else if(valemail === ""){
+            //     window.alert("Email cannot be empty");
+            }else if (valpass === ""){
+                window.alert("Password cannot be empty");
+            } else{        
+                window.location="todolist.html";
+                window.alert("Sign up Successful!")
+          }
+        });
+    </script>
+
+</body>
+
+</html>
